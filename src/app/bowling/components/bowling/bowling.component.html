@@ -1,0 +1,16 @@
+<p>YOUR GAME</p>
+
+<div *ngIf="game && game.frames.length > 0">
+  <!-- <div>{{ game | json }}</div> -->
+  <div class="frames">
+    <app-frame
+      *ngFor="let frame of game.frames; let i = index; trackBy: customTB"
+      [frame]="frame"
+    ></app-frame>
+  </div>
+</div>
+<button type="button" (click)="throw()" class="btn btn-primary my-3">BOWL</button>
+
+<div *ngIf="lastThrow > -1">
+  You bowled: {{ lastThrow }} pin{{ lastThrow === 1 ? "" : "s" }}
+</div>

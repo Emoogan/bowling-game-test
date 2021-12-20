@@ -1,0 +1,30 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 60px;
+    margin-right: 1rem;
+}
+
+.frame-throws{
+    display: flex;
+    flex-direction: row;
+}
+
+.first-element {
+    flex: 1;
+    text-align: right;
+}
+
+.second-element {
+    border: 1px dotted black;
+    flex: 1;
+    padding-right: 3px;
+    margin-left: 1rem;
+    text-align: right;
+}
+
+.score {
+    padding-right: 3px;
+    text-align: right;
+}
